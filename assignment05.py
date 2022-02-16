@@ -86,16 +86,12 @@ while True:
         # to go through each row in lstTable
         for row in lstTable:
             objFile.write((row['Task']) + "," + (row['Priority']) + "\n")
-            print("\nData was saved")
         objFile.close()
+        print("\nData was saved")
         continue
     # Step 7 - Exit program
     elif strChoice.strip() == '5':
-        print('Would you like to save your data?')
-        strOption = str(input('Enter y or n : '))
-
-        # if user chose y the data will be written in txt file
-        if strOption.lower() == 'y':
-            break  # and Exit the program
+        print("Thank you!")
+        break  # and Exit the program
     else:
         continue
